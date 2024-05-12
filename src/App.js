@@ -9,14 +9,17 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <h3>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Бессмертный Род.
         </a>
+        </h3>
+        <h3>Мы приветсвуем вас!</h3>
       </header>
     </div>
   );
