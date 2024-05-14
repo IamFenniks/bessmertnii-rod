@@ -4,28 +4,28 @@
   text-align: center;
   display: grid;
   grid-template-areas: 
-    'header header header'
-    'nav nav nav'
-    'main main main'
-    'footer footer footer'
+    'h h h'
+    'n n n'
+    'm m m'
+    'f f f'
   ;
   font-family: Montserrat;
   color: #282c34;
 }
 
 .App-header{
-  grid-area: header;}
-.App-nav{grid-area: nav;}
-.App-main{grid-area: main;}
-.App-footer{grid-area: footer;}
+  grid-area: h;}
+.App-nav{grid-area: n;}
+.App-main{grid-area: m;}
+.App-footer{grid-area: f;}
 
 .App-header, .App-nav, .App-footer {
-  height: 30px;
+  /* height: 30px; */
   padding: 12px;
   background-color: #282c34;
   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2vw;
 
   align-items: center;
@@ -44,11 +44,21 @@
 .header-login{place-self: center end;}
 
 .App-nav{
-  height: 25px;
+  /* height: 25px; */
   background-color: #ffffff;
   color: #282c34;
   border-bottom: 1px solid #282c34;
 }
+
+.App-main {
+  text-align-last: left;
+  padding: 12px;
+}
+.App-main > div {
+  padding: 6px 0;
+}
+
+/* .App-footer{} */
 
 @keyframes header-logo-spin {
   from {

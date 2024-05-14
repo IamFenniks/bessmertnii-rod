@@ -13,12 +13,52 @@ const App = () => {
       </header>
 
       <nav className="App-nav">
-        <div>Profile</div>
-        <div>Messages</div>
+        <div className=''>
+
+          Profile
+
+        </div>
+        <div className=''>
+
+          Messages
+
+        </div>
+        <div className=''>
+
+          News
+
+        </div>
+        <div className=''>
+
+          Music
+
+        </div>
+        <div className=''>
+
+          Settings
+
+        </div> 
+      
       </nav>
 
       <main className="App-main">
-        Содержимое
+        <div>
+          Avatar + desription
+        </div>
+
+        <div>
+          My post
+        </div>
+
+        <div>
+          New post
+        </div>
+
+        <div>
+          <section>Post 1</section>
+          <section>Post 2</section>
+          <section>Post 3</section>
+        </div>
       </main>
 
       <footer className="App-footer">
