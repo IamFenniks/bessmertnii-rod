@@ -1,38 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    'main main main'
+    'footer footer footer'
+  ;
+  font-family: Montserrat;
+  color: #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App-header{
+  grid-area: header;}
+.App-nav{grid-area: nav;}
+.App-main{grid-area: main;}
+.App-footer{grid-area: footer;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App-header, .App-nav, .App-footer {
+  height: 30px;
+  padding: 12px;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2vw;
+
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.header-logo {
+  height: 9vmin;
+  pointer-events: none;
+}
+.header-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-login{place-self: center end;}
 
-.App-link {
-  color: #61dafb;
+.App-nav{
+  height: 25px;
+  background-color: #ffffff;
+  color: #282c34;
+  border-bottom: 1px solid #282c34;
 }
 
-@keyframes App-logo-spin {
+@keyframes header-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .header-logo {
+    animation: header-logo-spin infinite 20s linear;
   }
 }

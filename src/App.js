@@ -1,26 +1,29 @@
-import logo from './logo.svg';
+import logo from './img/logo.png';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h3>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          Бессмертный Род.
-        </a>
-        </h3>
-        <h3>Мы приветсвуем вас!</h3>
+        <img src={ logo } 
+             alt="Бессмертный Род"
+             className='header-logo' />
+        <a href="#" className="header-link">Бессмертный Род</a>
+        <div className="header-login">login</div>
       </header>
+
+      <nav className="App-nav">
+        <div>Profile</div>
+        <div>Messages</div>
+      </nav>
+
+      <main className="App-main">
+        Содержимое
+      </main>
+
+      <footer className="App-footer">
+        Подвал
+      </footer>
     </div>
   );
 }
