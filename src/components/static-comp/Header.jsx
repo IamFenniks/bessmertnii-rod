@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
+import css from '../../css/static-css/Header.module.css'
 
 const Header = () => {
     return (
-        <header className="App-header">
+        <header className="appHeader">
             <img src={ logo }
                 alt="Бессмертный Род"
-                className='header-logo' />
-            <a href="#" className="header-link">Бессмертный Род</a>
-            <div className="header-login">login</div>
+                className={ css.headerLogo } />
+            <a href="#" className={ css.headerLink }>Бессмертный Род</a>
+            <div className={ css.headerLogin }>login</div>
         </header>
     );
 }

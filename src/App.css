@@ -13,13 +13,12 @@
   color: #282c34;
 }
 
-.App-header{
-  grid-area: h;}
-.App-nav{grid-area: n;}
-.App-main{grid-area: m;}
-.App-footer{grid-area: f;}
+.appHeader{grid-area: h;}
+.appNav{grid-area: n;}
+.appMain{grid-area: m;}
+.appFooter{grid-area: f;}
 
-.App-header, .App-nav, .App-footer {
+.appHeader, .appNav, .appFooter {
   /* height: 30px; */
   padding: 12px;
   background-color: #282c34;
@@ -33,44 +32,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.header-logo {
-  height: 9vmin;
-  pointer-events: none;
-}
-.header-link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.header-login{place-self: center end;}
 
-.App-nav{
+/* ---------------------------------------------------- */
+
+.appNav{
   /* height: 25px; */
   background-color: #ffffff;
+  font-weight: 500;
   color: #282c34;
   border-bottom: 1px solid #282c34;
 }
 
-.App-main {
+/* ---------------------------------------------------- */
+
+.appMain {
   text-align-last: left;
   padding: 12px;
 }
-.App-main > div {
+.appMain>div {
   padding: 6px 0;
 }
-
-/* .App-footer{} */
-
-@keyframes header-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .header-logo {
-    animation: header-logo-spin infinite 20s linear;
-  }
-}
-  
