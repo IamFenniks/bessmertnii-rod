@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../img/logo.png';
-import css from '../../css/static-css/Header.module.css'
+import logo from '../../../img/logo.png';
+import css from './Header.module.css'
 
 const Header = () => {
     return (
@@ -8,7 +8,9 @@ const Header = () => {
             <img src={ logo }
                 alt="Бессмертный Род"
                 className={ css.headerLogo } />
-            <a href="#" className={ css.headerLink }>Бессмертный Род</a>
+            <a href="#" className={ css.headerLink }>
+                Бессмертный Род
+            </a>
             <div className={ css.headerLogin }>login</div>
         </header>
     );

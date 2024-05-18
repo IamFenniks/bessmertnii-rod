@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../../css/static-css/Footer.module.css'
+import css from './Footer.module.css'
 // className={ `${css.one} ${css.two}` } - склеивание стилей
 
 const Footer = () => {

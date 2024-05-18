@@ -1,5 +1,5 @@
 import React from 'react';
-import css from '../../css/static-css/Nav.module.css'
+import css from './Nav.module.css'
 
 // className={ `${css.one} ${css.two}` } - склеивание стилей
 
