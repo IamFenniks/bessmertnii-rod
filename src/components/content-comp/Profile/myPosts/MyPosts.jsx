@@ -14,14 +14,14 @@ const MyPosts = () => {
 
 
       <div className={css.posts}>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+        <Post message='Привет, меня зовут АС' />
+        <Post message='Hi. А я крут' />
+        <Post message='О, как здорово' />
+        <Post message='Что ж. Вот мы и собралсь...' />
+        <Post message='Кто собрался, а кто и нет' />
+        <Post message='Вы о чём, ребята?' />
+        <Post message='Они куда-то собрались...' />
+        <Post message='И я знаю куда... В ReactJS круиз!!!' />
       </div>
 
     </div>
