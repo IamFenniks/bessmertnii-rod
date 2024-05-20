@@ -6,30 +6,30 @@ import css from './Nav.module.css'
 const Nav = () => {
     return (
         <nav className='appNav'>
-            <div className={ css.li }>
-
-                Profile
-
+            <div className={css.li}>
+                <a href="">
+                    Profile
+                </a>
             </div>
-            <div className={ css.li }>
-
-                Messages
-
+            <div className={css.li}>
+                <a href="">
+                    Messages
+                </a>
             </div>
-            <div className={ css.li }>
-
-                News
-
+            <div className={css.li}>
+                <a href="">
+                    News
+                </a>
             </div>
-            <div className={ css.li }>
-
-                Music
-
+            <div className={css.li}>
+                <a href="">
+                    Music
+                </a>
             </div>
-            <div className={ css.li }>
-
-                Settings
-
+            <div className={css.li}>
+                <a href="">
+                    Settings
+                </a>
             </div>
 
         </nav>
