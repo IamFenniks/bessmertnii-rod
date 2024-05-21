@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './Nav.module.css'
+import { Link } from 'react-router-dom';
 
 // className={ `${css.one} ${css.two}` } - склеивание стилей
 
@@ -7,29 +8,29 @@ const Nav = () => {
     return (
         <nav className='appNav'>
             <div className={css.li}>
-                <a href="/profile">
+                <Link to="profile">
                     Profile
-                </a>
+                </Link>
             </div>
             <div className={css.li}>
-                <a href="/chat">
+                <Link to="chat">
                     Dialogs
-                </a>
+                </Link>
             </div>
             <div className={css.li}>
-                <a href="/news">
+                <Link to="news">
                     News
-                </a>
+                </Link>
             </div>
             <div className={css.li}>
-                <a href="/music">
+                <Link to="music">
                     Music
-                </a>
+                </Link>
             </div>
             <div className={css.li}>
-                <a href="/settings">
+                <Link to="settings">
                     Settings
-                </a>
+                </Link>
             </div>
 
         </nav>
