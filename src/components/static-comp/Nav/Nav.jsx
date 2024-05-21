@@ -7,27 +7,27 @@ const Nav = () => {
     return (
         <nav className='appNav'>
             <div className={css.li}>
-                <a href="">
+                <a href="/profile">
                     Profile
                 </a>
             </div>
             <div className={css.li}>
-                <a href="">
-                    Messages
+                <a href="/chat">
+                    Dialogs
                 </a>
             </div>
             <div className={css.li}>
-                <a href="">
+                <a href="/news">
                     News
                 </a>
             </div>
             <div className={css.li}>
-                <a href="">
+                <a href="/music">
                     Music
                 </a>
             </div>
             <div className={css.li}>
-                <a href="">
+                <a href="/settings">
                     Settings
                 </a>
             </div>
