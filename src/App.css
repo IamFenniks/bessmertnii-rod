@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     'h h h'
     'n n n'
     'm m m'
@@ -14,16 +14,29 @@
   color: #282c34;
 }
 
-.appHeader{grid-area: h;}
-.appNav{grid-area: n;}
-.appMain{grid-area: m;}
-.appFooter{grid-area: f;}
+.appHeader {
+  grid-area: h;
+}
 
-.appHeader, .appNav, .appFooter {
+.appNav {
+  grid-area: n;
+}
+
+.appMain {
+  grid-area: m;
+}
+
+.appFooter {
+  grid-area: f;
+}
+
+.appHeader,
+.appNav,
+.appFooter {
   /* height: 30px; */
   padding: 12px;
   background-color: #282c34;
-  
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2vw;
@@ -35,7 +48,7 @@
 
 /* ---------------------------------------------------- */
 
-.appNav{
+.appNav {
   /* height: 25px; */
   background-color: #ffffff;
   font-weight: 500;
@@ -49,6 +62,7 @@
   text-align-last: left;
   padding: 12px;
 }
+
 .appMain>div {
   padding: 6px 0;
 }

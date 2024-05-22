@@ -1,2 +1,17 @@
+.li a {
+    text-decoration: none;
+    color: #282c34;
+}
+.li:hover a {
+    font-weight: 400;
+}
 
-  
+.li a:active {
+    font-weight: 700;
+    font-size: calc(11px + 2vmin);
+}
+
+.li a:focus {
+    font-weight: 600;
+    font-size: calc(11px + 2vmin);
+}

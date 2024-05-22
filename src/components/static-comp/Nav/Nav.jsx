@@ -9,12 +9,12 @@ const Nav = () => {
         <nav className='appNav'>
             <div className={css.li}>
                 <Link to="profile">
-                    Profile
+                    Кабинет
                 </Link>
             </div>
             <div className={css.li}>
                 <Link to="chat">
-                    Dialogs
+                    Диалоги
                 </Link>
             </div>
             <div className={css.li}>
