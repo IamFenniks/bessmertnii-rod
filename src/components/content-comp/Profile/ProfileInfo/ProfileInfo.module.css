@@ -1,0 +1,10 @@
+.profInfo {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.profAva img {
+    width: 225px;
+    border-radius: 10em;
+    border: 2px solid white;
+}

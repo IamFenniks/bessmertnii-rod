@@ -5,13 +5,18 @@ import Post from './Post/Post';
 const MyPosts = () => {
   return (
     <div className={css.myPosts}>
+      <hr />
       <h4>My post</h4>
 
       <div className={css.myForm}>
-        <textarea name="addPost" id="addPost">addPost</textarea>
-        <button>Add Post</button>
+        <div className="postText">
+          <textarea name="postText" id="postText">Введите текст...</textarea>
+        </div>
+        <div className="addPostBtn">
+          <button>Add Post</button>
+        </div>
       </div>
-
+      <hr />
 
       <div className={css.posts}>
         <Post message='Привет, меня зовут АС' />
