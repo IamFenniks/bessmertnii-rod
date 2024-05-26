@@ -6,9 +6,9 @@ import Messages from './Messages/Messages';
 const Dialogs = (props) => {
   return (
     <div className={css.dialogs}>
-      <Chat />
+      <Chat chItems={  props.chItems} />
 
-      <Messages />
+      <Messages mesItems={ props.mesItems } />
     </div>
   );
 }

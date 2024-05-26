@@ -5,15 +5,19 @@ import Main from './components/content-comp/Main';
 import Footer from './components/static-comp/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
-    </div>
+      <div className="App">
+        <Header />
+        <Nav />
+        <Main 
+          myPosts={ props.myPosts } 
+          chItems={ props.chItems }
+          mesItems={ props.mesItems }
+        />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

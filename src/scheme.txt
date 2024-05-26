@@ -1,0 +1,19 @@
+index.js
+    <App />
+        <BrowserRouter>
+            <Header />
+            <Nav />
+            <Main />
+                <Routes>
+                    <Route <Profile /> />
+                        <ProfileInfo />
+                        <MyPosts />
+                            <Post />
+                    <Route <Dialogs /> />
+                        <Chat />
+                            <ChatItem />
+                        <Messages />
+                            <MessItem />
+                </Routes>
+            <Footer />
+        </BrowserRouter>
