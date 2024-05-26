@@ -2,7 +2,7 @@ import React from 'react';
 import css from './MyPosts.module.css'
 import Post from './Post/Post';
 
-let myPostData = [
+let myPosts = [
   {mess: 'Привет, меня зовут АС'},
   {mess: 'Hi. А я крут'},
   {mess: 'О, как здорово'},
@@ -12,6 +12,8 @@ let myPostData = [
   {mess: 'Они куда-то собрались...'},
   {mess: 'И я знаю куда... В ReactJS круиз!!!'}
 ];
+
+let postsArr = myPosts.map( p => <Post message={p.mess} /> );
 
 const MyPosts = () => {
   return (
@@ -30,14 +32,7 @@ const MyPosts = () => {
       <hr />
 
       <div className={css.posts}>
-        <Post message={myPostData[0].mess} />
-        <Post message={myPostData[1].mess} />
-        <Post message={myPostData[2].mess} />
-        <Post message={myPostData[3].mess} />
-        <Post message={myPostData[4].mess} />
-        <Post message={myPostData[5].mess} />
-        <Post message={myPostData[6].mess} />
-        <Post message={myPostData[7].mess} />
+        { postsArr }
       </div>
 
     </div>
