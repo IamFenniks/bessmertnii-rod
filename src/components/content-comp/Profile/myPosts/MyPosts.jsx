@@ -2,6 +2,17 @@ import React from 'react';
 import css from './MyPosts.module.css'
 import Post from './Post/Post';
 
+let myPostData = [
+  {mess: 'Привет, меня зовут АС'},
+  {mess: 'Hi. А я крут'},
+  {mess: 'О, как здорово'},
+  {mess: 'Что ж. Вот мы и собралсь...'},
+  {mess: 'Кто собрался, а кто и нет'},
+  {mess: 'Вы о чём, ребята?'},
+  {mess: 'Они куда-то собрались...'},
+  {mess: 'И я знаю куда... В ReactJS круиз!!!'}
+];
+
 const MyPosts = () => {
   return (
     <div className={css.myPosts}>
@@ -19,14 +30,14 @@ const MyPosts = () => {
       <hr />
 
       <div className={css.posts}>
-        <Post message='Привет, меня зовут АС' />
-        <Post message='Hi. А я крут' />
-        <Post message='О, как здорово' />
-        <Post message='Что ж. Вот мы и собралсь...' />
-        <Post message='Кто собрался, а кто и нет' />
-        <Post message='Вы о чём, ребята?' />
-        <Post message='Они куда-то собрались...' />
-        <Post message='И я знаю куда... В ReactJS круиз!!!' />
+        <Post message={myPostData[0].mess} />
+        <Post message={myPostData[1].mess} />
+        <Post message={myPostData[2].mess} />
+        <Post message={myPostData[3].mess} />
+        <Post message={myPostData[4].mess} />
+        <Post message={myPostData[5].mess} />
+        <Post message={myPostData[6].mess} />
+        <Post message={myPostData[7].mess} />
       </div>
 
     </div>
