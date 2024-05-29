@@ -4,12 +4,13 @@ import MyPosts from './myPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = (props) => {
-  debugger
+  let profPage = props.profPage;
+  
   return (
     <div className={ css.profile }>
       <ProfileInfo />
 
-      <MyPosts myPosts={ props.myPosts } />
+      <MyPosts myPosts={ profPage.myPosts } />
     </div>
   );
 }

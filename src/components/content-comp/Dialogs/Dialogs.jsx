@@ -4,11 +4,14 @@ import Chat from './Chat/Chat';
 import Messages from './Messages/Messages';
 
 const Dialogs = (props) => {
+  debugger
+  let dialogsPage = props.dialogsPage;
+
   return (
     <div className={css.dialogs}>
-      <Chat chItems={  props.chItems} />
+      <Chat chItems={ dialogsPage.chItems } />
 
-      <Messages mesItems={ props.mesItems } />
+      <Messages mesItems={ dialogsPage.mesItems } />
     </div>
   );
 }

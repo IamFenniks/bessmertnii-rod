@@ -11,11 +11,7 @@ const App = (props) => {
       <div className="App">
         <Header />
         <Nav />
-        <Main 
-          myPosts={ props.myPosts } 
-          chItems={ props.chItems }
-          mesItems={ props.mesItems }
-        />
+        <Main state={ props.state } />
         <Footer />
       </div>
     </BrowserRouter>
