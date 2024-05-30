@@ -2,22 +2,18 @@ import React from 'react';
 import css from './MyPosts.module.css'
 import Post from './Post/Post';
 
-// let myPosts = [
-//   {mess: 'Привет, меня зовут АС'},
-//   {mess: 'Hi. А я крут'},
-//   {mess: 'О, как здорово'},
-//   {mess: 'Что ж. Вот мы и собралсь...'},
-//   {mess: 'Кто собрался, а кто и нет'},
-//   {mess: 'Вы о чём, ребята?'},
-//   {mess: 'Они куда-то собрались...'},
-//   {mess: 'И я знаю куда... В ReactJS круиз!!!'}
-// ];
+// onClick={ () => { alert('Добавить') } }
 
 const MyPosts = (props) => {
-  debugger
   let myPosts = props.myPosts;
-  
   let postsArr = myPosts.map( p => <Post message={p.mess} /> );
+
+  let newPostElement = React.createRef();
+  
+  let onAddPost = () => { 
+    let text = newPostElement.current.value;
+    alert( text ) 
+  }
 
   return (
     <div className={css.myPosts}>
@@ -26,10 +22,10 @@ const MyPosts = (props) => {
 
       <div className={css.myForm}>
         <div className="postText">
-          <textarea name="postText" id="postText">Введите текст...</textarea>
+          <textarea name="postText" ref={ newPostElement } title='Введите текст...'></textarea>
         </div>
         <div className="addPostBtn">
-          <button>Add Post</button>
+          <button onClick={ onAddPost }>Add Post</button>
         </div>
       </div>
       <hr />
