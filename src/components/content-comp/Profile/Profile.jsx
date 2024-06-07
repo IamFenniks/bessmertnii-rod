@@ -10,7 +10,10 @@ const Profile = (props) => {
     <div className={ css.profile }>
       <ProfileInfo />
 
-      <MyPosts myPosts={ profPage.myPosts } />
+      <MyPosts 
+        myPosts={ profPage.myPosts } 
+        addPost={ props.addPost }
+      />
     </div>
   );
 }

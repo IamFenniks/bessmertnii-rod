@@ -4,7 +4,7 @@ import Chat from './Chat/Chat';
 import Messages from './Messages/Messages';
 
 const Dialogs = (props) => {
-  debugger
+  // debugger
   let dialogsPage = props.dialogsPage;
 
   return (

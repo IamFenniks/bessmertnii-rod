@@ -1,17 +1,19 @@
-let friendAva = 'https://avatars.mds.yandex.net/i?id=13b1234f4c0f1e5730c6c65904b04179-4233102-images-thumbs&n=13';
-let yourAva = 'https://avatars.mds.yandex.net/i?id=be935738007a47dbd50bbb658b223e462b45b692-10496841-images-thumbs&n=13';
+import { renderEntireTree } from "../render";
+
+let friendAva = 'https://avatars.mds.yandex.net/i?id:13b1234f4c0f1e5730c6c65904b04179-4233102-images-thumbs&n=13';
+let yourAva = 'https://avatars.mds.yandex.net/i?id:be935738007a47dbd50bbb658b223e462b45b692-10496841-images-thumbs&n=13';
 
 let state = {
     profPage: {
         myPosts: [
-            {mess: 'Привет, меня зовут АС'},
-            {mess: 'Hi. А я крут'},
-            {mess: 'О, как здорово'},
-            {mess: 'Что ж. Вот мы и собралсь...'},
-            {mess: 'Кто собрался, а кто и нет'},
-            {mess: 'Вы о чём, ребята?'},
-            {mess: 'Они куда-то собрались...'},
-            {mess: 'И я знаю куда... В ReactJS круиз!!!'}
+            {id:0, mess: 'Привет, меня зовут АС',               likesCount: 11}, 
+            {id:1, mess: 'Hi. А я крут',                        likesCount: 1}, 
+            {id:2, mess: 'О, как здорово',                      likesCount: 12}, 
+            {id:3, mess: 'Что ж. Вот мы и собралсь...',         likesCount: 11}, 
+            {id:4, mess: 'Кто собрался, а кто и нет',           likesCount: 11}, 
+            {id:5, mess: 'Вы о чём, ребята?',                   likesCount: 11}, 
+            {id:6, mess: 'Они куда-то собрались...',            likesCount: 11}, 
+            {id:7, mess: 'И я знаю куда... В ReactJS круиз!!!', likesCount: 11} 
         ]
     },
     dialogsPage: {
@@ -33,3 +35,13 @@ let state = {
 }
 
 export default state;
+
+export let addPost = ( newText ) => {
+    // debugger
+    let newPost = {
+        id: 8, mess: newText, likesCount: 0
+    }
+    state.profPage.myPosts.push(newPost);
+
+    renderEntireTree(state);
+}
