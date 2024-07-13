@@ -5,15 +5,19 @@ import Post from './Post/Post';
 // onClick={ () => { alert('Добавить') } }
 
 const MyPosts = (props) => {
-  let myPosts = props.myPosts;
-  let postsArr = myPosts.map( p => <Post message={p.mess} /> );
-
-  let newPostElement = React.createRef();
+  debugger
+  let newPostText = props.newPostText;
+  let postsArr = props.myPosts.map( (p, index) => <Post key={index} message={p.mess} /> );
   
   let onAddPost = () => { 
-    // debugger
-    let text = newPostElement.current.value;
-    props.addPost(text);
+    props.addPost();
+  }
+  
+  let element = '';
+
+  let onNPTChange = (e) => {
+    element = e.target.value;
+    props.updateNewPostText(element); 
   }
   return (
     <div className={css.myPosts}>
@@ -22,7 +26,10 @@ const MyPosts = (props) => {
 
       <div className={css.myForm}>
         <div className="postText">
-          <textarea name="postText" ref={ newPostElement } title='Введите текст...'></textarea>
+          <textarea   
+            onChange={ onNPTChange } 
+            placeholder="postText"
+            value={ newPostText } />
         </div>
         <div className="addPostBtn">
           <button onClick={ onAddPost }>Add Post</button>

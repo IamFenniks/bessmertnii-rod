@@ -9,7 +9,10 @@ const App = (props) => {
       <div className="App">
         <Header />
         <Nav />
-        <Main state={ props.state } addPost={ props.addPost } />
+        <Main 
+          state={ props.state } 
+          updateNewPostText={ props.updateNewPostText }
+          addPost={ props.addPost }  />
         <Footer />
       </div>
   );

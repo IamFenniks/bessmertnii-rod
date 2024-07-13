@@ -14,7 +14,8 @@ let state = {
             {id:5, mess: 'Вы о чём, ребята?',                   likesCount: 11}, 
             {id:6, mess: 'Они куда-то собрались...',            likesCount: 11}, 
             {id:7, mess: 'И я знаю куда... В ReactJS круиз!!!', likesCount: 11} 
-        ]
+        ],
+        newPostText: ''
     },
     dialogsPage: {
         chItems: [
@@ -34,14 +35,22 @@ let state = {
     }
 }
 
-export default state;
-
-export let addPost = ( newText ) => {
-    // debugger
+export let addPost = () => {
     let newPost = {
-        id: 8, mess: newText, likesCount: 0
+        id: 8,
+        mess: state.profPage.newPostText,
+        likesCount: 0
     }
     state.profPage.myPosts.push(newPost);
+    state.profPage.newPostText = ''; 
+    
+    renderEntireTree(state);
+}
+
+export let updateNewPostText = ( text )  => {
+    state.profPage.newPostText = text;
 
     renderEntireTree(state);
 }
+
+export default state;

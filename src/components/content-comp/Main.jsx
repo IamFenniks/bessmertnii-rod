@@ -11,8 +11,12 @@ const Main = (props) => {
       <Routes>
         <Route 
           path="/profile" 
-          element={<Profile profPage={ state.profPage } 
-          addPost={ props.addPost } />} 
+          element={
+            <Profile 
+              profPage={ state.profPage } 
+              updateNewPostText={ props.updateNewPostText }
+              addPost={ props.addPost } />
+          } 
         />
         <Route 
           path="/chat" 

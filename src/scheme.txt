@@ -17,3 +17,19 @@ index.js
                 </Routes>
             <Footer />
         </BrowserRouter>
+
+state.js
+    state {
+        profPage{
+            myPosts: [],
+            newPostText: ''
+        },
+        dialogsPage{
+            chItems: [],
+            mesItems: []
+        }
+    }
+
+    updateNewPostText = (text) = {};
+
+    addPost = (newText) => {};
